@@ -4,10 +4,17 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Inter, "Avenir Next", Avenir,
+    "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica,
+    "Helvetica Neue", sans-serif;
     display: flex;
     flex-direction: column;
     overflow-x: hidden; /* Prevent horizontal scrolling */
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    line-height: 1.4; /* Set line spacing for headings */
 }
 
 /* Ensure box-sizing includes padding and borders in the element's width */
@@ -20,6 +27,12 @@ html, body {
     flex: 1; /* Makes the wrapper take up available space */
     display: flex;
     flex-direction: column;
+}
+
+.content-wrapper {
+    max-width: 800px; /* Set a maximum width */
+    margin: 0 auto; /* Center the wrapper */
+    padding: 1em; /* Optional: add some padding */
 }
 
 /* Header Styles */
@@ -51,6 +64,15 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
+body a {
+    text-decoration: underline;
+    color: var(--link-color);
+}
+
+body a:hover {
+    text-decoration: none;
+}
+
 /* Main Content Styling */
 main {
     padding: 2em;
@@ -60,6 +82,10 @@ main {
     flex: 1; /* Ensures main content grows to fill available space */
 }
 
+.justified-text {
+    text-align: justify; /* Justify the text */
+}
+
 main section {
     margin-bottom: 2em;
 }
@@ -67,7 +93,7 @@ main section {
 /* Footer Styles */
 footer {
     background-color: var(--footer-background);
-    color: white;
+    color: #050505;
     padding: 1em;
     text-align: center;
     width: 100%;
@@ -100,6 +126,7 @@ footer {
 body {
     background-color: var(--background);
     color: var(--text-color);
+    text-align: left; /* Ensure all body text is left-aligned */
 }
 
 /* Responsive Design for iFrames */

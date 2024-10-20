@@ -23,13 +23,13 @@ h1, h2, h3 {
 }
 
 /* Wrapper to allow the footer to stick to the bottom if content is short */
-.wrapper {
+.index-wrapper {
     flex: 1; /* Makes the wrapper take up available space */
     display: flex;
     flex-direction: column;
 }
 
-.content-wrapper {
+.index-content-wrapper {
     max-width: 800px; /* Set a maximum width */
     margin: 0 auto; /* Center the wrapper */
     padding: 1em; /* Optional: add some padding */
@@ -143,4 +143,47 @@ iframe {
 
 img {
     border-radius: 7px; /* Adjust as needed */
+}
+
+.youtube-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.youtube-content-wrapper {
+    flex: 1;
+    padding: 2em;
+}
+
+/* Flexbox container for two columns */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Gap between the two sections */
+    width: 100%; /* Take the full width of the screen */
+    padding: 0; /* No extra padding */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+/* Left Column: Music */
+.music-section {
+    flex: 1; /* Ensure it takes up the full available space equally */
+    background-color: var(--header-background); /* Light background for visual separation */
+    padding: 15px;
+    box-sizing: border-box; /* Include padding in total width */
+}
+
+/* Right Column: Podcast */
+.podcast-section {
+    flex: 1; /* Ensure it takes up the full available space equally */
+    background-color: var(--header-background); /* Light background for visual separation */
+    padding: 15px;
+    box-sizing: border-box; /* Include padding in total width */
+}
+
+/* Responsive Design: Stack the columns on smaller screens */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column; /* Stack the sections vertically */
+    }
 }

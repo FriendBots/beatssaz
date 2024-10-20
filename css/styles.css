@@ -35,6 +35,12 @@ h1, h2, h3 {
     padding: 1em; /* Optional: add some padding */
 }
 
+.music-content-wrapper {
+    max-width: 900px; /* Set a maximum width */
+    margin: 0 auto; /* Center the wrapper */
+    padding: 1em; /* Optional: add some padding */
+}
+
 /* Header Styles */
 header {
     background-color: var(--header-background);
@@ -184,6 +190,75 @@ img {
 /* Responsive Design: Stack the columns on smaller screens */
 @media (max-width: 768px) {
     .flex-container {
+        flex-direction: column; /* Stack the sections vertically */
+    }
+}
+
+/* Music.html container*/
+
+.music-content-wrapper {
+    flex: 1;
+    padding: 0;
+}
+
+/* Flexbox container for two columns */
+.myflex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Gap between the two sections */
+    width: 100%; /* Take the full width of the screen */
+    padding: 0; /* No extra padding */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+/* my1 */
+.my1 {
+    flex: 1; /* Ensure it takes up the full available space equally */
+    background-color: var(--header-background); /* Light background for visual separation */
+    padding: 5px;
+    box-sizing: border-box; /* Include padding in total width */
+}
+
+/* my2 */
+.my2 {
+    flex: 1; /* Ensure it takes up the full available space equally */
+    background-color: var(--header-background); /* Light background for visual separation */
+    padding: 5px;
+    box-sizing: border-box; /* Include padding in total width */
+}
+
+/* my3 */
+.my3 {
+    flex: 1; /* Ensure it takes up the full available space equally */
+    background-color: var(--header-background); /* Light background for visual separation */
+    padding: 5px;
+    box-sizing: border-box; /* Include padding in total width */
+}
+
+.my4 {
+    flex: 1; /* Ensure it takes up the full available space equally */
+    background-color: var(--header-background); /* Light background for visual separation */
+    padding: 5px;
+    box-sizing: border-box; /* Include padding in total width */
+}
+
+.my5 {
+    flex: 1; /* Ensure it takes up the full available space equally */
+    background-color: var(--header-background); /* Light background for visual separation */
+    padding: 5px;
+    box-sizing: border-box; /* Include padding in total width */
+}
+
+.my6 {
+    flex: 1; /* Ensure it takes up the full available space equally */
+    background-color: var(--header-background); /* Light background for visual separation */
+    padding: 5px;
+    box-sizing: border-box; /* Include padding in total width */
+}
+
+/* Responsive Design: Stack the columns on smaller screens */
+@media (max-width: 768px) {
+    .myflex-container {
         flex-direction: column; /* Stack the sections vertically */
     }
 }

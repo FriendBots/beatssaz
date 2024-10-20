@@ -93,7 +93,7 @@ main section {
 /* Footer Styles */
 footer {
     background-color: var(--footer-background);
-    color: #050505;
+    /*color: yellow;*/
     padding: 1em;
     text-align: center;
     width: 100%;
@@ -119,6 +119,12 @@ footer {
         --header-background: #add8e6; /* Light blue for the header */
         --footer-background: #add8e6; /* Light blue for the footer */
         --link-color: blue; /* Link color in light mode */
+    }
+    :footer {
+        color: black;
+    }
+    :header {
+        --text-color: black;
     }
 }
 

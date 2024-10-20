@@ -120,11 +120,11 @@ footer {
         --footer-background: #add8e6; /* Light blue for the footer */
         --link-color: blue; /* Link color in light mode */
     }
-    :footer {
+    footer {
         color: black;
     }
-    :header {
-        --text-color: black;
+    h1 {
+        color: #000080; /* Dark blue or any contrasting color for h1 text */
     }
 }
 
@@ -139,4 +139,8 @@ body {
 iframe {
     max-width: 100%;
     height: auto;
+}
+
+img {
+    border-radius: 7px; /* Adjust as needed */
 }

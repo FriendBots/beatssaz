@@ -47,8 +47,9 @@ h1, h2, h3 {
 header {
     background-color: var(--header-background);
     color: white;
-    padding: 1em;
+    padding: 0;
     text-align: center;
+    position: relative; /* Ensure the nav is positioned correctly */
 }
 
 /* Navigation */
@@ -61,25 +62,6 @@ nav ul li {
     display: inline;
     margin: 0 1em;
 }
-
-/*nav ul li a {
-    text-decoration: underline;
-    color: var(--link-color);
-}
-
-/* Remove underline on hover */
-/*nav ul li a:hover {
-    text-decoration: none;
-}
-
-body a {
-    text-decoration: underline;
-    color: var(--link-color);
-}
-
-body a:hover {
-    text-decoration: none;
-}*/
 
 /* Default link styles */
 a {
@@ -129,10 +111,10 @@ footer {
 /* Media Queries for Light and Dark Mode */
 @media (prefers-color-scheme: dark) {
     :root {
-        --background: #1e1e1e;
+        --background: #042536;
         --text-color: #ffffff;
-        --header-background: #333333;
-        --footer-background: #333333;
+        --header-background: #08a2c5;
+        --footer-background: #044c74;
         --link-color: yellow; /* Link color in dark mode */
     }
     a {
@@ -145,20 +127,20 @@ footer {
 
 @media (prefers-color-scheme: light) {
     :root {
-        --background: #f0f4f8; /* A lighter shade of white for the background */
+        --background: #ecdfe3; /* A shade of white for the background */
         --text-color: #000000;
-        --header-background: #add8e6; /* Light blue for the header */
-        --footer-background: #add8e6; /* Light blue for the footer */
+        --header-background: #08a2c5;
+        --footer-background: #042536;
         --link-color: blue; /* Link color in light mode */
     }
     footer {
-        color: black;
+        color: white;
     }
-    h1 {
-        color: #000080; /* Dark blue or any contrasting color for h1 text */
+    header {
+        color: #042536; /* Dark blue or any contrasting color for h1 text */
     }
     a {
-        color: blue;
+        color: darkblue;
     }
     a:hover {
         background-color: rgba(0, 0, 255, 0.2); /* Light blue highlight for light theme */

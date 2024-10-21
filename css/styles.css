@@ -4,9 +4,10 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, Inter, "Avenir Next", Avenir,
+    /*font-family: -apple-system, BlinkMacSystemFont, Inter, "Avenir Next", Avenir,
     "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica,
-    "Helvetica Neue", sans-serif;
+    "Helvetica Neue", sans-serif;*/
+    font-family: "Arima", system-ui;
     display: flex;
     flex-direction: column;
     overflow-x: hidden; /* Prevent horizontal scrolling */
@@ -14,6 +15,7 @@ html, body {
 }
 
 h1, h2, h3 {
+    font-family: Poppins, sans-serif;
     line-height: 1.4; /* Set line spacing for headings */
 }
 
@@ -60,13 +62,13 @@ nav ul li {
     margin: 0 1em;
 }
 
-nav ul li a {
+/*nav ul li a {
     text-decoration: underline;
     color: var(--link-color);
 }
 
 /* Remove underline on hover */
-nav ul li a:hover {
+/*nav ul li a:hover {
     text-decoration: none;
 }
 
@@ -77,6 +79,23 @@ body a {
 
 body a:hover {
     text-decoration: none;
+}*/
+
+/* Default link styles */
+a {
+    color: inherit; /* Inherits the color from the parent element */
+    text-decoration: none; /* Remove default underline */
+    border-bottom: 1px dotted; /* Add dotted underline */
+    border-color: var(--text-color); /* Dotted line same color as text */
+    padding-bottom: 0px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect */
+a:hover {
+    /*background-color: rgba(255, 255, 0, 0.3); /* Yellow highlight with transparency */
+    border-bottom: 1px dotted; /* Keep the dotted underline */
+    color: var(--text-color); /* Keep text color the same */
 }
 
 /* Main Content Styling */
@@ -116,6 +135,12 @@ footer {
         --footer-background: #333333;
         --link-color: yellow; /* Link color in dark mode */
     }
+    a {
+        color: yellow;
+    }
+    a:hover {
+        background-color: rgba(255, 255, 0, 0.3); /* Yellow highlight for dark theme */
+    }
 }
 
 @media (prefers-color-scheme: light) {
@@ -131,6 +156,12 @@ footer {
     }
     h1 {
         color: #000080; /* Dark blue or any contrasting color for h1 text */
+    }
+    a {
+        color: blue;
+    }
+    a:hover {
+        background-color: rgba(0, 0, 255, 0.2); /* Light blue highlight for light theme */
     }
 }
 

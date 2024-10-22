@@ -275,3 +275,16 @@ img {
         flex-direction: column; /* Stack the sections vertically */
     }
 }
+
+.contact-ul {
+    list-style: none; /* Removes the default list style */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Makes the list items align horizontally */
+    justify-content: center; /* Centers the items horizontally */
+    align-items: center; /* Centers the items vertically */
+}
+
+.contactli {
+    margin: 0 10px; /* Adds some spacing between the items */
+}
